@@ -5,7 +5,9 @@ class QuestionSetService {
   static getInstance(): QuestionSetService {
     return new QuestionSetService();
   }
-
+  async syncProblemData(data: any): Promise<any> {
+    return baseApiService.post('/sync', data);
+  }
   async fetchQuestionSet(data: {
     question_set_id: string;
   }): Promise<QuestionSet> {

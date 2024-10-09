@@ -13,6 +13,7 @@ export enum AuthActionType {
 
 export enum QuestionSetActionType {
   FETCH_QUESTION_SET = 'question/set/fetch',
+  SYNC_QUESTION_RESPONSE = 'question/sync/response',
   FETCH_QUESTION_SET_COMPLETED = 'question/set/fetch/completed',
   FETCH_QUESTION_SET_ERROR = 'question/set/fetch/error',
 }

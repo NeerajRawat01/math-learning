@@ -2,6 +2,7 @@
 import React from 'react';
 import Button from 'shared-resources/components/Button/Button';
 import QuestionHeader from '../QuestionHeader/QuestionHeader';
+import MultiDigitGrid from '../ProblemGrid/MultiDigitGrid';
 
 interface ContainerLayoutProps {
   headerText: string;
@@ -20,7 +21,8 @@ const ContainerLayout: React.FC<ContainerLayoutProps> = ({
     <QuestionHeader HeaderText={headerText} />
     <div className='flex md:gap-[85px] items-end flex-col md:flex-row'>
       <div className='md:w-[962px] h-[250px] sm:h-[350px] md:h-[450px] max-h-[480px] p-20 border-[1px] md:ml-[60px] border-black mt-[61px] flex items-center justify-center'>
-        {content}
+        {/* {content} */}
+        <MultiDigitGrid />
       </div>
 
       <div className='md:pb-16'>
